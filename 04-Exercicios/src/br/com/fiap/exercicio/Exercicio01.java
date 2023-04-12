@@ -18,24 +18,26 @@ public class Exercicio01 {
 		//Ler as notas do aluno
 		System.out.println("Digite a cp1");
 		aluno.cp1 = leitor.nextDouble();
+		
 		System.out.println("Digite a cp2");
 		aluno.cp2 = leitor.nextDouble();
-		System.out.println("Digite a cp1");
+		
+		System.out.println("Digite a cp3");
 		aluno.cp3 = leitor.nextDouble();
-		System.out.println("Digite a global");
-		aluno.global = leitor.nextDouble();
-		System.out.println("Digite a challenge");
+		
+		System.out.println("Digite o challenge");
 		aluno.challenge = leitor.nextDouble();
 		
+		System.out.println("Digite a global");
+		aluno.global = leitor.nextDouble();
+		
 		//Calcular a media semestral do aluno
-		double mediaSemestre = aluno.calcularMediaSemestre();
+		double media = aluno.calcularMediaSemestre();
 		
 		//Exibir o nome e a media do aluno
+		System.out.println(aluno.nome + " " + media);
 		
-		System.out.println("O aluno " + aluno.nome + " tirou a média: " + mediaSemestre);
-		
-		//fechar leitor
+		//Fechar o leitor
 		leitor.close();
-		
 	}
 }
